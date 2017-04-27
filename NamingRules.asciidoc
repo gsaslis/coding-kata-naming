@@ -1,0 +1,11 @@
+= General Naming Rules
+
+The below list of rules is heavily influenced by Uncle Bob's *excellent*
+https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882[Clean Code book]
+(you should really go buy it, it's worth every penny), and also a couple of talks
+(https://skillsmatter.com/skillscasts/5747-how-to-name-things-the-solution-to-the-hardest-problem-in-programming[talk],
+http://www.se-radio.net/2016/12/se-radio-episode-278-peter-hilton-on-naming/[podcast]) by
+http://hilton.org.uk/[Peter Hilton] on naming.
+
+
+//TODO: fill in naming rules

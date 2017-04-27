@@ -1,0 +1,59 @@
+= Codefather: A Coding Kata on Naming
+
+A coding kata about good (and bad!) naming in software development.
+
+TIP: In Greece, at least, Godfathers pick the name for the child they baptize. This is where
+`Codefather` comes from, but it is quite possible that a lot of people don't have this prior
+knowledge, which renders the choice of this name for the kata a clear problem. Though the play
+on words makes `Codefather` a fun title, it is arguably still a bad choice.
+Consider this the first lesson included in this kata about naming.
+
+== Goal
+
+By the end of this kata you should have established an appreciation of the intrinsic
+difficulty in picking good names and you will hopefully be convinced that naming is
+an important activity in software development and is worth your time and energy.
+
+== Requirements
+
+Even though you can choose any programming language, this kata is really a modeling exercise.
+It is thus possible to complete this on a piece of paper, a napkin, a notepad, your
+favourite IDE or text editor.
+
+== General Naming Rules
+
+Before you go on to the kata itself, you might want to consider the following
+link:NamingRules.asciidoc[list of rules] around naming.
+
+
+== Problem Description
+
+The problem we will examine is one we all have to deal with: Our mobile phone bills.
+
+In short, you are responsible for creating a model (i.e. all the objects / data structures
+that can provide your client - the mobile network operator) the most flexibility in billing
+its subscribers.
+
+We need the model to support the creation of a bill.
+
+Things that are commonly included in mobile phone bills (include as many of these as you
+have time for):
+
+* Calls,
+* SMS,
+* MMS,
+* Data,
+* Monthly subscription fee,
+* Tax (various types)
+
+In addition, you can consider the following common modifiers to the above items, just to
+spice things up a bit:
+
+* Usage during "peak" hours vs. off-peak (e.g. evenings & weekends),
+* Calls, etc. made to the same network vs. cross-network,
+* Usage included in monthly plan vs. extra usage
+
+Finally, consider that the MNO needs to either:
+* create all invoices on a set day of the month
+* create invoices on a standard period (e.g. monthly) after the subscriber originally
+signed on (e.g. on the 6th month)
