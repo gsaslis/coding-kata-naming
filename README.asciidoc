@@ -1,0 +1,4 @@
+= The Codefather
+A workshop about good (and bad!) naming in software development.
+
+TIP: In Greece, at least, Godfathers pick the name for the child they baptize. This is where `Codefather` comes from, but it is quite possible that a lot of people don't know this. `Codefather` is therefore arguably a bad choice for the title of this workshop. Consider this the first lesson included in the workshop about naming.
