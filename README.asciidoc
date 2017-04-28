@@ -30,8 +30,8 @@ link:NamingRules.asciidoc[list of rules] around naming.
 
 The problem we will examine is one we all have to deal with: Our mobile phone bills.
 
-In short, you are responsible for creating a model (i.e. all the objects / data structures
-that can provide your client - the mobile network operator) the most flexibility in billing
+In short, you are responsible for creating a model, i.e. all the objects and data structures
+that can provide your client - the mobile network operator - the most flexibility in billing
 its subscribers.
 
 We need the model to support the creation of a bill.
@@ -54,6 +54,6 @@ spice things up a bit:
 * Usage included in monthly plan vs. extra usage
 
 Finally, consider that the MNO needs to either:
+
 * create all invoices on a set day of the month
-* create invoices on a standard period (e.g. monthly) after the subscriber originally
-signed on (e.g. on the 6th month)
+* create invoices on a standard period (e.g. monthly) after the subscriber originally signed on (e.g. on the 6th month)
