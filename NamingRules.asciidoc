@@ -8,4 +8,149 @@ http://www.se-radio.net/2016/12/se-radio-episode-278-peter-hilton-on-naming/[pod
 http://hilton.org.uk/[Peter Hilton] on naming.
 
 
-//TODO: fill in naming rules
+== Names are Variables (!!)
+
+Before we look at specific rules for how to pick good names (and - perhaps more importantly -
+avoid bad ones), it is important to keep one thing in mind: +
+_The names you pick can (and, in fact, *should*) change over the lifetime of your codebase._
+
+The above statement may sound obvious. What's hidden within, however, is the intent to *continuously
+improve* the names you pick.
+
+Do NOT be afraid to change the names you pick. As your understanding of the problem domain grows,
+you will find you are able to pick better names.
+
+TIP: The renaming refactoring is one of the easiest and most widely-supported.
+So there's nothing really stopping you, is there?
+
+== Naming Patterns to Avoid
+
+Some of these _may_ seem familiar. Don't feel bad, we've all been there!  : )
+
+
+.Meaningless
+====
+This contains placeholders (e.g. `foo`), or just completely random variable names (e.g. `abcdef`) and so on.
+====
+
+.Too General
+====
+You can do better than `data`. You can do better than `byte[] someBytes`.
+====
+
+.Disinformation
+====
+Consider: `String[] messageList`... It's not really a `List`, is it?
+====
+
+.Stuff You Have to Remember
+====
+Don't use "notes to self". Avoid conventions that hide some meaning:
+
+E.g. Will you really remember in a few months / years that `String title` will always have
+the lowercase version of the `String fullTitle` ?
+====
+
+.Too Short / Long
+====
+Leave one-letter variables to mathematicians. Just don't.
+
+On the other end, if your name is more than 4-5 concatenated works, think if that concept
+can be expressed with another word in English.
+====
+
+.Abbreviations
+====
+Will you always remember what variable `pm` was?
+====
+
+.Classes
+====
+Verbs as class names very seldom work. Use nouns or phrases. Avoid `Manager`, `Processor`, etc.
+====
+
+.Methods
+====
+In contrast, methods should almost always include a verb, to indicate the action
+they perform.
+====
+
+== Good Naming Principles
+
+DO consider the below when picking your names.
+
+.Answers Questions About Itself
+====
+A good name will answer "why" this element exists, "what" it does, "how" it's used.
+
+What am I to understand when I read a variable you've named: `aMap` ?
+====
+
+.Explain Why Two Similar Variables / Functions Exist
+====
+Consider the following constructor:
+
+[source,java]
+----
+  public Message(String s1, String s2){
+    // ...
+  }
+----
+
+Do we know anything about `s1` vs. `s2` ?
+
+Also, consider `bankData` and `bank`. Couldn't they both hold the same information? How can
+we distinguish between them?
+====
+
+.Read Names Out Loud
+====
+Code is SO much easier to skim through when your eyes can just scan through words they can
+understand.
+====
+
+[source,java]
+----
+int avgCntWk;
+int avgCntMn;
+int avgCntQt;
+----
+
+.VS.
+
+[source,java]
+----
+int averageWeeklyCount;
+int averageMonthlyCount;
+int averageQuarterlyCount;
+----
+
+Yes, it's longer. Who cares?
+
+.Stay Consistent
+====
+Don't call thing X `something` in one place and `somethingElse` somewhere else.
+
+Choose upfront if you'll be using `send` or `transfer` or `dispatch`. It's confusing to
+have both a `sendMessage` and a `dispatchMessage`, each hiding some different meaning.
+====
+
+.Context
+====
+However well named your method might be, it will simply feel out of place if it's not placed
+in a Class with a name that also makes sense. And the Class itself should also find its
+place in a suitable package.
+
+DO pick a well-suited context for your methods and classes.
+====
+
+.Domain Names
+====
+We all understand names from the software development domain. `Stack` and `FifoQueue`
+might be confusing to anyone who's not a software engineer, but chances are s/he won't
+be reading your code anyway.
+
+DO also use terms from the *problem domain* that your software is solving, especially
+when you can't express your thoughts in standard CS terms. These terms will at least
+be concise and clear.
+====
