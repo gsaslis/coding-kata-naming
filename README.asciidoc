@@ -11,12 +11,12 @@ Consider this the first lesson included in this kata about naming.
 == Goal
 
 By the end of this kata you should have established an appreciation of the intrinsic
-difficulty in picking good names and you will hopefully be convinced that naming is
+*difficulty in picking good names* and you will hopefully be convinced that naming is
 an important activity in software development and is worth your time and energy.
 
 == Requirements
 
-Even though you can choose any programming language, this kata is really a modeling exercise.
+Even though you can choose any programming language, this kata is really a *modeling exercise*.
 It is thus possible to complete this on a piece of paper, a napkin, a notepad, your
 favourite IDE or text editor. In fact, you can even solve this in your brain!
 
@@ -28,12 +28,18 @@ link:NamingRules.asciidoc[list of rules] around naming.
 
 == Problem Description
 
-The problem we will examine is one we all have to deal with: Our mobile phone bills.
+The problem we will examine is one we all have to deal with:
+
+Our mobile phone bills.
 
 In short, you are responsible for creating a model, i.e. all the objects and data structures
 that can provide your client - the mobile network operator - the most flexibility in billing
 its subscribers.
 
-We need the model to support the creation of the mobile phone bill.
+For the purposes of this kata, we just need the model to support the creation of the
+mobile phone bill. We can safely assume there is some existing billing system that has
+calculated every charge on our account.
+
+We are simply concerned with presenting that information in a document.
 
 If you are ready to begin, please proceed to link:Step1.asciidoc[Step 1] !
