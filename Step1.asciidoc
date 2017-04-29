@@ -1,0 +1,31 @@
+== Step 1. Modeling the Main Entities
+Think about the model first.
+
+Decide what you want each main entity to be called.
+
+NOTE: If working in a group, this can also be done as a group exercise, so you can all reach
+a common understanding of the domain together.
+
+* How does the MNO refer to you as?
+* What do you call the service you buy from the MNO?
+* What is the document we are talking about called? (Maybe `bill` is ok, but maybe not!)
+** What elements appear in this document?
+** What do you call each one of them?
+** Where do these entities belong? How are they linked with the other main entities?
+
+=== Remember
+Things that are commonly included in mobile phone bills (include as many of these as you
+have time for, maybe just start with the top 2):
+
+* Calls,
+* SMS,
+* MMS,
+* Data,
+* Monthly subscription fee,
+* Tax (various types)
+
+
+TIP: This part is about picking good names for the model. Are you happy with the names of
+all the objects / data structures and their attributes ? If not, refactor!
+
+If you are ready to continue, please proceed to link:Step2.asciidoc[Step 2] !
